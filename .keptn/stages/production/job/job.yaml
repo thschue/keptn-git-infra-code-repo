@@ -1,0 +1,14 @@
+apiVersion: v2
+actions:
+  - name: "infrastructure"
+    events:
+      - name: "sh.keptn.event.infrastructure-delivery.triggered"
+    tasks:
+      - name: "terraform"
+        files:
+          - terraform
+        image: "hashicorp/terraform:0.12.31"
+        cmd:
+          - sh
+        args:
+          - /keptn/terraform/terraform.sh

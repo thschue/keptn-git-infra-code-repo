@@ -1,0 +1,6 @@
+services:
+  - name: infrastructure 
+
+git_config:
+  user_email: demo@keptn.sh
+  user_name: "PodTatoHead - Infrastructure"
